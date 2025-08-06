@@ -108,8 +108,28 @@ header {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    header {
+        padding: 0 15px; /* Smaller padding for header on mobile */
+    }
+
+    .logo {
+        width: 100px; /* Adjust logo size for mobile */
+    }
+
     .center-nav {
-        display: none;
+        display: none; /* Hide center navigation on mobile */
+    }
+
+    .right-nav {
+        gap: 10px; /* Reduce gap between right nav items */
+    }
+
+    #hero {
+        padding-top: 80px; /* Adjust hero padding for smaller header */
+    }
+
+    .hero-content h1 {
+        font-size: 32px; /* Smaller font size for hero title */
     }
 
     .hero-buttons {
@@ -118,8 +138,22 @@ header {
     }
 
     .btn-primary, .btn-secondary {
-        width: 80%; /* Adjust as needed */
-        max-width: 300px; /* Optional: set a max-width for larger mobile devices */
+        width: 90%; /* Make buttons wider on mobile */
+        max-width: 320px; /* Max width for buttons */
         margin: 0 auto; /* Center the buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px; /* Even smaller font size for very small screens */
+    }
+
+    .hero-content p {
+        font-size: 12px; /* Smaller font for hero description */
+    }
+
+    .hero-buttons {
+        margin-bottom: 40px; /* Reduce margin for buttons on very small screens */
     }
 }
